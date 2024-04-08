@@ -25,16 +25,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick_tap_ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
-        };
-
-        td: td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&none>, <&none>;
         };
     };
 
@@ -43,11 +35,11 @@
 
         default_layer {
             bindings = <
-&kp ESC                          &kp N1     &kp N2    &kp N3    &kp N4            &kp N5  &tog 1                                                             &tog 2     &kp N6  &kp N7             &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp EQUAL                        &kp Q      &kp W     &kp E     &kp R             &kp T   &kp F2                                                             &kp F5     &kp Y   &kp U              &kp I      &kp O     &kp P     &kp BSLH
-&hm LCTRL TAB                    &kp A      &kp S     &kp D     &hm LEFT_SHIFT F  &kp G   &kp F4    &kp LCTRL  &kp LALT  &none  &none  &kp LGUI   &kp RCTRL  &kp F12    &kp H   &hm RIGHT_SHIFT J  &kp K      &kp L     &kp SEMI  &kp SQT
-&hm LEFT_SHIFT LEFT_PARENTHESIS  &kp Z      &kp X     &kp C     &kp V             &kp B   &none     &none      &kp HOME  &none  &none  &kp PG_UP  &none      &none      &kp N   &kp M              &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&none                            &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                 &kp BSPC  &kp DEL    &kp END                 &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
+&kp ESC                          &kp N1     &kp N2        &kp N3    &kp N4            &kp N5  &tog 1                                                                     &tog 2     &kp N6  &kp N7             &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp EQUAL                        &kp Q      &kp W         &kp E     &kp R             &kp T   &kp F2                                                                     &kp F5     &kp Y   &kp U              &kp I      &kp O     &kp P     &kp BSLH
+&hm RIGHT_CONTROL TAB            &kp A      &kp S         &kp D     &hm LEFT_SHIFT F  &kp G   &kp F4    &kp RIGHT_CONTROL  &kp LALT  &none  &none  &kp LGUI   &kp RCTRL  &kp F12    &kp H   &hm RIGHT_SHIFT J  &kp K      &kp L     &kp SEMI  &kp SQT
+&hm LEFT_SHIFT LEFT_PARENTHESIS  &kp Z      &kp X         &kp C     &kp V             &kp B   &none     &none              &kp HOME  &none  &none  &kp PG_UP  &none      &none      &kp N   &kp M              &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp PSCRN                        &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT                 &kp BSPC  &kp DEL            &kp END                 &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
             >;
         };
 
@@ -85,7 +77,7 @@
             bindings = <
 &trans         &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&hm LCTRL TAB  &trans  &trans  &td     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&hm LCTRL TAB  &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &trans  &trans  &trans  &trans          &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
