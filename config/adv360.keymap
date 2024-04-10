@@ -38,14 +38,14 @@
 &kp ESC                          &kp N1     &kp N2        &kp N3    &kp N4            &kp N5  &tog 1                                                                     &tog 2     &kp N6  &kp N7             &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp EQUAL                        &kp Q      &kp W         &kp E     &kp R             &kp T   &kp F2                                                                     &kp F5     &kp Y   &kp U              &kp I      &kp O     &kp P     &kp BSLH
 &hm RIGHT_CONTROL TAB            &kp A      &kp S         &kp D     &hm LEFT_SHIFT F  &kp G   &kp F4    &kp RIGHT_CONTROL  &kp LALT  &none  &none  &kp LGUI   &kp RCTRL  &kp F12    &kp H   &hm RIGHT_SHIFT J  &kp K      &kp L     &kp SEMI  &kp SQT
-&hm LEFT_SHIFT LEFT_PARENTHESIS  &kp Z      &kp X         &kp C     &kp V             &kp B   &none     &none              &kp HOME  &none  &none  &kp PG_UP  &none      &none      &kp N   &kp M              &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&hm LEFT_SHIFT LEFT_PARENTHESIS  &kp Z      &kp X         &kp C     &kp V             &kp B   &none     &none              &kp HOME  &none  &none  &kp PG_UP  &none      &none      &kp N   &kp M              &kp COMMA  &kp DOT   &kp FSLH  &hm RIGHT_SHIFT MINUS
 &kp PSCRN                        &kp GRAVE  &kp CAPSLOCK  &kp LEFT  &kp RIGHT                 &kp BSPC  &kp DEL            &kp END                 &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP             &kp DOWN   &kp LBKT  &kp RBKT  &mo 1
             >;
         };
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 2                                                &mo 5   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 0                                                &to 0   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans  &none                                                 &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans  &none  &none  &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &none   &none   &trans  &none  &none  &trans  &none   &none   &trans  &trans  &trans  &trans   &trans   &trans
@@ -55,7 +55,7 @@
 
         layer_mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                                            &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                                                            &to 0                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                                                      &bootloader             &none         &none         &none         &none         &none         &none
 &none  &none         &none         &none         &none         &none         &rgb_ug RGB_MEFS_CMD 5  &bt BT_CLR  &none  &none  &none  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5  &none         &none         &none         &none         &none         &none
 &none  &none         &none         &none         &none         &none         &none                   &none       &none  &none  &none  &none       &none       &none                   &none         &none         &none         &none         &none         &none
