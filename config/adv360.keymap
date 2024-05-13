@@ -33,24 +33,8 @@
             label = "HM_HOLD";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
-
-            retro-tap;
-        };
-
-        tapDance: tapDance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE";
-            #binding-cells = <0>;
-            bindings = <&kp INSERT>, <&kp PRINTSCREEN>;
-        };
-
-        ins_pscrn: ins_pscrn {
-            compatible = "zmk,behavior-tap-dance";
-            label = "INS_PSCRN";
-            #binding-cells = <0>;
-            bindings = <&kp INSERT>, <&kp PRINTSCREEN>;
         };
     };
 
